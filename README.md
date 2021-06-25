@@ -21,8 +21,16 @@ Bank Management-Class
       (b) Create Git branches.
       
 5. Read up on "Command Line Interface (CLI)":-
-      (a) A text based user interface that is used to operate software and operating systems while allowing the user to respond to visual prompts by typing single commands into           the interface and receiving a reply in the same way, unlike graphical user interface (GUI).
-      (b) Many header files needed to be included.
+      (a) A text based user interface that is used to operate software and operating systems while allowing the user to respond to visual prompts by typing single commands             into the interface and receiving a reply in the same way, unlike graphical user interface (GUI).
+      (b) Many header files needed to be included:-
+                  ~ list available functions, including their return type and parameter types
+                  ~ call functions with any number of arguments of any primitive types or stl-like non-associative containers
+                  ~ read and write variables (const/read-only variables supported)
+                  ~ when a function is called, output its return value (of any supported type
+      (c) To do:-
+                  ~ support arguments of user-defined types
+                  ~ support asynchronous execution of commands
+                  ~ call functions remotely
       (c) Tried to understand and implement it.
        
        
