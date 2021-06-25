@@ -1,0 +1,19 @@
+//CLI utilizes a macro which automatically generates your program's entry point.
+//This construction will generate the program's main entry point and all the code needed to capture the declared arguments, as well as --help and --version arguments.
+
+#include <cppcli/command_line_interface.h>
+#include <iostream>
+
+cli_main(
+	// program information
+	"string with program name",
+	"string with program version",
+	"string with progarm description",
+	
+	// argument declarations
+	cli::RequiredArgument<int> semicolon_terminated_argument1("arg1");
+	cli::RequiredArgument<std::string> semicolon_terminated_argument2("arg2");
+	cli::create_alias("arg1", '1');
+) {
+	std::cout << *semicolon_terminated_argument1 << *semicolon_terminated_argument2 << std::endl;
+} end_cli_main
