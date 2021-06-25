@@ -78,12 +78,6 @@ class account{
             long long int bal=money;
             return bal;
         }
-        string show_type()
-        {
-
-        }
-
-
 };
 
 int main()
@@ -103,7 +97,7 @@ int main()
         cout<<"       (7) Exit\n";
 
         long long int choice;
-        cout<<"\n++ Enter Your Choice: ";
+        cout<<"\n++ Enter Your Choice (1-7): ";
         cin>>choice;
         switch(choice){
         case 1:
